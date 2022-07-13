@@ -7,54 +7,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "098CD550-731E-4D62-AAEF-086AF5921163"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "SwiftUIConcurrency/LongRunningTask.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "12"
-            endingLineNumber = "12"
-            landmarkName = "getOrders()"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "098CD550-731E-4D62-AAEF-086AF5921163 - a1dbf57f8ec25145"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "SwiftUIConcurrency.LongRunningTask.getOrders() async -&gt; Swift.Array&lt;SwiftUIConcurrency.Order&gt;"
-                  moduleName = "SwiftUIConcurrency"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/Georgi.Ivanov/Projects/Other/SwiftUIConcurrency/SwiftUIConcurrency/LongRunningTask.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "12"
-                  endingLineNumber = "12"
-                  offsetFromSymbolStart = "84">
-               </Location>
-               <Location
-                  uuid = "098CD550-731E-4D62-AAEF-086AF5921163 - 731e6d8019311a29"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(1) await resume partial function for SwiftUIConcurrency.LongRunningTask.getOrders() async -&gt; Swift.Array&lt;SwiftUIConcurrency.Order&gt;"
-                  moduleName = "SwiftUIConcurrency"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/Georgi.Ivanov/Projects/Other/SwiftUIConcurrency/SwiftUIConcurrency/LongRunningTask.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "12"
-                  endingLineNumber = "12"
-                  offsetFromSymbolStart = "56">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "285F36A8-390C-49ED-BE97-FDA6E6FF2C20"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
@@ -71,22 +23,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "78ADAA04-CD01-480A-97F1-BD20FC14685C"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "SwiftUIConcurrency/ContentView.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "12"
-            endingLineNumber = "12"
-            landmarkName = "body"
-            landmarkType = "24">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "41949B8C-F65C-4A34-B25C-32D8C8334D26"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
@@ -98,54 +34,6 @@
             endingLineNumber = "16"
             landmarkName = "fetchRowData()"
             landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "AB2F4297-A5F2-4112-9E86-78986B8E3173"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "SwiftUIConcurrency/SafeView/SafeView.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "18"
-            endingLineNumber = "18"
-            landmarkName = "unknown"
-            landmarkType = "0">
-            <Locations>
-               <Location
-                  uuid = "AB2F4297-A5F2-4112-9E86-78986B8E3173 - 74304fc7511d8534"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(1) suspend resume partial function for closure #1 @Sendable () async -&gt; () in closure #1 () -&gt; () in closure #1 () -&gt; SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0, SwiftUI.List&lt;Swift.Never, SwiftUI.ForEach&lt;Swift.Array&lt;SwiftUIConcurrency.Order&gt;, Swift.Int, SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(SwiftUI.Text, SwiftUI.Spacer, SwiftUI.Text)&gt;&gt;&gt;&gt;)&gt; in SwiftUIConcurrency.SafeView.body.getter : some"
-                  moduleName = "SwiftUIConcurrency"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/Georgi.Ivanov/Projects/Other/SwiftUIConcurrency/SwiftUIConcurrency/SafeView/SafeView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "18"
-                  endingLineNumber = "18"
-                  offsetFromSymbolStart = "88">
-               </Location>
-               <Location
-                  uuid = "AB2F4297-A5F2-4112-9E86-78986B8E3173 - e88d9a2baf32c136"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(3) suspend resume partial function for closure #1 @Sendable () async -&gt; () in closure #1 () -&gt; () in closure #1 () -&gt; SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0, SwiftUI.List&lt;Swift.Never, SwiftUI.ForEach&lt;Swift.Array&lt;SwiftUIConcurrency.Order&gt;, Swift.Int, SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(SwiftUI.Text, SwiftUI.Spacer, SwiftUI.Text)&gt;&gt;&gt;&gt;)&gt; in SwiftUIConcurrency.SafeView.body.getter : some"
-                  moduleName = "SwiftUIConcurrency"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/Georgi.Ivanov/Projects/Other/SwiftUIConcurrency/SwiftUIConcurrency/SafeView/SafeView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "18"
-                  endingLineNumber = "18"
-                  offsetFromSymbolStart = "36">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

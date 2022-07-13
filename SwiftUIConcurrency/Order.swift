@@ -11,12 +11,13 @@ enum OrderType: String, Hashable {
 }
 
 struct Order {
+    let amount: Double
     let pair: String
     let type: OrderType
 }
 
 extension Order: Identifiable {
     var id: Int {
-        pair.hashValue ^ type.hashValue
+        pair.hashValue ^ type.hashValue ^ Int(amount)
     }
 }

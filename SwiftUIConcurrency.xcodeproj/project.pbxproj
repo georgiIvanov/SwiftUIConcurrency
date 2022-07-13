@@ -15,6 +15,8 @@
 		B694CF3C287F19DC00B45ABA /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = B694CF3B287F19DC00B45ABA /* Order.swift */; };
 		B694CF3E287F1AA800B45ABA /* LongRunningTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = B694CF3D287F1AA800B45ABA /* LongRunningTask.swift */; };
 		B694CF41287F201000B45ABA /* SafeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B694CF40287F201000B45ABA /* SafeView.swift */; };
+		B694CF44287F211400B45ABA /* UnsafeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B694CF43287F211400B45ABA /* UnsafeViewModel.swift */; };
+		B694CF46287F211B00B45ABA /* UnsafeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B694CF45287F211B00B45ABA /* UnsafeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +29,8 @@
 		B694CF3B287F19DC00B45ABA /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
 		B694CF3D287F1AA800B45ABA /* LongRunningTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongRunningTask.swift; sourceTree = "<group>"; };
 		B694CF40287F201000B45ABA /* SafeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafeView.swift; sourceTree = "<group>"; };
+		B694CF43287F211400B45ABA /* UnsafeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnsafeViewModel.swift; sourceTree = "<group>"; };
+		B694CF45287F211B00B45ABA /* UnsafeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnsafeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +63,7 @@
 		B694CF2A287F198400B45ABA /* SwiftUIConcurrency */ = {
 			isa = PBXGroup;
 			children = (
+				B694CF42287F210500B45ABA /* UnsafeView */,
 				B694CF3F287F1FF700B45ABA /* SafeView */,
 				B694CF2B287F198400B45ABA /* SwiftUIConcurrencyApp.swift */,
 				B694CF2D287F198400B45ABA /* ContentView.swift */,
@@ -85,6 +90,15 @@
 				B694CF40287F201000B45ABA /* SafeView.swift */,
 			);
 			path = SafeView;
+			sourceTree = "<group>";
+		};
+		B694CF42287F210500B45ABA /* UnsafeView */ = {
+			isa = PBXGroup;
+			children = (
+				B694CF43287F211400B45ABA /* UnsafeViewModel.swift */,
+				B694CF45287F211B00B45ABA /* UnsafeView.swift */,
+			);
+			path = UnsafeView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -157,9 +171,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B694CF46287F211B00B45ABA /* UnsafeView.swift in Sources */,
 				B694CF2E287F198400B45ABA /* ContentView.swift in Sources */,
 				B694CF2C287F198400B45ABA /* SwiftUIConcurrencyApp.swift in Sources */,
 				B694CF3C287F19DC00B45ABA /* Order.swift in Sources */,
+				B694CF44287F211400B45ABA /* UnsafeViewModel.swift in Sources */,
 				B694CF41287F201000B45ABA /* SafeView.swift in Sources */,
 				B694CF3A287F19A900B45ABA /* SafeViewModel.swift in Sources */,
 				B694CF3E287F1AA800B45ABA /* LongRunningTask.swift in Sources */,

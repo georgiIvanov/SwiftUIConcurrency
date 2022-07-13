@@ -10,11 +10,35 @@ import Foundation
 class LongRunningTask {
     func getOrders() async -> [Order] {
         try? await Task.sleep(nanoseconds: 2 * 1_000_000_000)
-        return [
-            Order(pair: "USD/BTC", type: .buy),
-            Order(pair: "ETH/USDT", type: .buy),
-            Order(pair: "SOL/APE", type: .sell),
-            Order(pair: "ETH/BTC", type: .buy),
+        return generateOrders()
+    }
+    
+    
+    func generateOrders() -> [Order] {
+        return (0...Int.random(in: 1...10))
+            .map { amount in
+                Order(
+                    amount: Double(amount),
+                    pair: "\(getRandomCurrency()) / \(getRandomCurrency())",
+                    type: amount % 2 == 0 ? .buy : .sell
+                )
+            }
+    }
+    
+    func getRandomCurrency() -> String {
+        let index = Int.random(in: 0...9)
+        let arr = [
+            "USD",
+            "ADA",
+            "BTC",
+            "ETH",
+            "DOGE",
+            "SHIB",
+            "APE",
+            "ONE",
+            "USDC",
+            "USDT"
         ]
+        return arr[index]
     }
 }

@@ -9,7 +9,17 @@ import SwiftUI
 
 struct ContentView: View {    
     var body: some View {
-        SafeView()
+        TabView {
+            SafeView()
+                .tabItem {
+                    Label("Safe", systemImage: "plus.app")
+                }
+            
+            UnsafeView()
+                .tabItem {
+                    Label("Order", systemImage: "minus.square")
+                }
+        }
     }
 }
 
