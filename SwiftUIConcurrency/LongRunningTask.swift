@@ -8,13 +8,20 @@
 import Foundation
 
 class LongRunningTask {
+    // Creates a random amount of orders after some time
     func getOrders() async -> [Order] {
         try? await Task.sleep(nanoseconds: 2 * 1_000_000_000)
         return generateOrders()
     }
     
+    // Get some remote data
+    func flipCoin(value: Bool) async -> Bool {
+        try? await Task.sleep(nanoseconds: 1_000_000)
+        return !value
+    }
     
-    func generateOrders() -> [Order] {
+    
+    private func generateOrders() -> [Order] {
         return (0...Int.random(in: 1...10))
             .map { amount in
                 Order(
@@ -25,7 +32,7 @@ class LongRunningTask {
             }
     }
     
-    func getRandomCurrency() -> String {
+    private func getRandomCurrency() -> String {
         let index = Int.random(in: 0...9)
         let arr = [
             "USD",

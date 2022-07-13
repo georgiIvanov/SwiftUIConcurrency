@@ -18,7 +18,7 @@ struct SafeView: View {
                     await safeViewModel.fetchRowData()
                 }
             }
-            .padding([.top], 200)
+            .padding([.top], 120)
             
             List(safeViewModel.rows) { order in
                 HStack {
