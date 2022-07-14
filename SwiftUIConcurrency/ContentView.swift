@@ -17,7 +17,7 @@ struct ContentView: View {
             
             UnsafeView()
                 .tabItem {
-                    Label("Order", systemImage: "minus.square")
+                    Label("Unsafe", systemImage: "minus.square")
                 }
         }
     }

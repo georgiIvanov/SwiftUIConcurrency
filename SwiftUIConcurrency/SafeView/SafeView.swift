@@ -10,15 +10,25 @@ import SwiftUI
 struct SafeView: View {
     
     @StateObject private var safeViewModel = SafeViewModel()
+    @State private var coinFlip: Bool = false
     
     var body: some View {
         VStack {
-            Button("Fetch data") {
-                Task {
-                    await safeViewModel.fetchRowData()
+            HStack {
+                Button("Safe fetch") {
+                    Task {
+                        await safeViewModel.fetchRowData()
+                    }
+                }
+                Spacer()
+                Button("Coin flip (\(coinFlip ? "True" : "False"))") {
+                    Task {
+                        await safeViewModel.updateSomeData($coinFlip)
+                    }
                 }
             }
             .padding([.top], 120)
+            .padding(20)
             
             List(safeViewModel.rows) { order in
                 HStack {

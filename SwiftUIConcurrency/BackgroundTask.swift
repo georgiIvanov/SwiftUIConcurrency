@@ -1,5 +1,5 @@
 //
-//  LongRunningTask.swift
+//  BackgroundTask.swift
 //  SwiftUIConcurrency
 //
 //  Created by Georgi Ivanov on 13.07.22.
@@ -7,7 +7,7 @@
 
 import Foundation
 
-class LongRunningTask {
+class BackgroundTask {
     // Creates a random amount of orders after some time
     func getOrders() async -> [Order] {
         try? await Task.sleep(nanoseconds: 2 * 1_000_000_000)
